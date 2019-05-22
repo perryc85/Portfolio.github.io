@@ -1,0 +1,233 @@
+body{
+    font-family: Laila;
+    margin: 0;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    justify-content: center;
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    height: 60px;
+}
+
+.content{
+    grid-area: content;
+    background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+    color: #EFEBD6;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.container{
+    font-size: 1.5em;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "sidebar"
+        "content"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-auto-columns: minmax(10px, auto);
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 15px;
+}
+
+nav li{
+    list-style: none;
+    font-size: 20px;
+}
+
+nav li a{
+    text-decoration: none;
+    border: 2px outset #EFEBD6;
+    /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.hero{
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#hero-img{
+    border-radius: 50%;
+    width: 200px;
+    margin-top: 10px;
+    border: 2px outset #EFEBD6;
+    box-shadow: 4px 4px 5px #888888;
+}
+
+#name{
+    color: #888888;
+}
+
+.icons{
+    color: #888888;
+    text-align: center;
+}
+
+.fa-github{
+    margin-right: 30px;
+    color: #888888;
+}
+
+.fa-linkedin-in{
+    margin-left: 30px;
+    color: #888888;
+    margin-right: 30px;
+}
+
+.fa-file-alt{
+    margin-left: 30px;
+    color: #888888;
+    margin-right: 30px;
+}
+
+.fa-envelope{
+    margin-left: 30px;
+    color: #888888;
+    margin-right: 30px;
+}
+
+.portfolio{
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.portfolio img{
+    align-items: center;
+    max-width: 100%;
+    min-height: 100px;
+    display: block;
+    margin: 3px auto;
+    border-radius: 40px;
+    border: 2px outset #EFEBD6;
+    transition: 0.4s;
+}
+
+.portfolio img:hover{
+    box-shadow: 4px 4px 5px #888888;
+}
+
+article a{
+    font-size: 20px;
+    color: #EFEBD6;
+    text-decoration: none;
+}
+
+.footer{
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.span{
+    font-size: 14px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #888888;
+}
+
+@media (min-width: 1040px){
+    .container{
+        grid-template-areas: 
+            "sidebar content"
+            "sidebar footer";
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: 1fr auto;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    nav li{
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+
+    .sidebar{
+        padding-top: 3em;
+        background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+        height: auto;
+    }
+
+    .hero{
+        text-align: center;
+        margin: 2em auto;
+    }
+
+    #hero-img{
+        height: 200px;
+        width: 200px;
+    }
+
+    .hero h1{
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .hero p{
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    .hero-content{
+        text-align: left;
+        margin: 2em auto;
+    }
+
+    .portfolio{
+        text-align: left;
+    }
+
+    .portfolio h2{
+        text-align: left;
+        font-size: 0.9em;
+    }
+
+    a p{
+        display: inline-block;
+        font-size: 15px;
+        color: #EFEBD6;
+    }
+
+    a div{
+        float: right;
+        width: 750px;
+    }
+
+    .portfolio img{
+        display: inline-block;
+        max-width: 200px; 
+        min-height: 80px;
+        margin: 0 0 0 0;
+    }
+
+    /* div .portfolio-img-2{
+        display: inline;
+        max-width: 400px; 
+        min-height: 300px;
+        margin: 0 5px 0 0;
+    } */
+
+    .footer{
+        text-align: center;
+        /* max-width: 1070px; */
+        background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    }
+}
