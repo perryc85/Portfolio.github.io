@@ -136,6 +136,11 @@ article a{
     font-size: 14px;
 }
 
+hr{
+    border-style: outset;
+    /* border: none; */
+}
+
 .footer a{
     text-decoration: none;
     color: #888888;
@@ -201,20 +206,20 @@ article a{
     }
 
     a p{
-        display: inline-block;
+        /* display: inline-block; */
         font-size: 15px;
         color: #EFEBD6;
     }
 
     a div{
-        float: right;
-        width: 750px;
+        /* float: right; */
+        width: 650px;
     }
 
     .portfolio img{
-        display: inline-block;
+        /* display: inline-block; */
         max-width: 200px; 
-        min-height: 80px;
+        min-height: 100px;
         margin: 0 0 0 0;
     }
 
@@ -224,6 +229,10 @@ article a{
         min-height: 300px;
         margin: 0 5px 0 0;
     } */
+
+    hr{
+        border-style: inset;
+    }
 
     .footer{
         text-align: center;
