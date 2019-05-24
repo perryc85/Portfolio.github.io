@@ -57,6 +57,15 @@ nav li a{
     text-align: center;
 }
 
+img{
+    border: 2px outset #EFEBD6;
+    box-shadow: 4px 4px 5px #888888;
+    text-align: center;
+    display: block;
+    max-width: 100%;
+    margin: 3em auto;
+}
+
 .icons{
     color: #888888;
     text-align: center;
@@ -94,6 +103,10 @@ nav li a{
     color: #888888;
 }
 
+.span{
+    font-size: 14px;
+}
+
 @media(min-width: 1040px){
     .container{
         grid-template-areas:
@@ -118,6 +131,15 @@ nav li a{
         padding-top: 3em;
         background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
         height: auto;
+    }
+
+    img{
+        border: 2px outset #EFEBD6;
+        box-shadow: 4px 4px 5px #888888;
+        margin-top: 3em;
+        text-align: center;
+        display: block;
+        margin: 3em auto;
     }
 
     .footer{
