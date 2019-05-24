@@ -3,8 +3,8 @@ let images = [];
 let time = 5000;
 
 //image list 
-images[0] = "/images/images.png";
-images[1] = "/images/school.jpg";
+images[0] = "images/images.png";
+images[1] = "images/school.jpg";
 
 
 //change image
